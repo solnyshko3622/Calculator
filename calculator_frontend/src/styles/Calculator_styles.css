@@ -1,0 +1,101 @@
+:root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    text-align: center;
+    --background-color: #E3D9CA;
+    --text-color: #403F48;
+    --accent-color: #95A792;
+    --accent-color-dark: #596C68;
+    --error-color: #ae1f1f;
+    background-color: var(--background-color);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+
+h1 {
+    color: var(--text-color);
+    font-size: 2.5em;
+}
+
+
+
+input {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: none;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    @media (max-width: 700px) {
+        width: 150px;
+        height: 40px;
+    }
+}
+
+::placeholder {
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+select {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    @media (max-width: 700px) {
+        width: 150px;
+        height: 40px;
+    }
+}
+
+
+button {
+    background-color: var(--accent-color-dark);
+    color: #E8F1F5;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    width: 250px;
+    height: 50px;
+    @media (max-width: 700px) {
+        width: 150px;
+        height: 40px;
+        font-size: 0.7em;
+    }
+}
+
+.error {
+    color: var(--error-color);
+}
+
+h2 {
+    color: var(--text-color);
+}
